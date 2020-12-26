@@ -1,0 +1,27 @@
+----- GUI -----
+
+To draw a shape using the GUI, press the according button from the toolbar, and start drawing on the canvas. At this point outline color, fill color and line type are supported only through commands. It's also possible to save the current slide on the canvas into an image file (.jpg or .png)
+
+----- CMD -----
+
+Supported Commands
+
+add
+undo
+redo
+exit
+
+Add command - 
+	add -shape type [init params...] -color [lineColor]  - fill [fillColor] -linetype [lineType] -linewidth [lineWidth]
+
+	shape - [line, ellipse, rect] followed by initialization parameters
+			line -> x1, y1, x2, y2
+			ellipse -> xcenter, ycenter, width, height
+			rect -> top, left, width, height
+			* shape has to be the first argument after add keyword
+	color[optional] - outline color, any qt supported color, (if not provided then black is used)
+	fill[optional] - fill color, any qt supported color (if not provided then no fill)
+	linetype[optional] - none, solid, dash, dot, dashdot, dashdotdot (default = solid)
+	linewidth[optional] - width of the outline in range [0, 20] (default = 3)
+
+	For example. add -shape ellipse 100, 100, 60, 60 -color black -fill darkRed -lineType dash

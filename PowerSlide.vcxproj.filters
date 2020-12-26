@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{db110c33-6718-4562-a33a-abe5d603cc08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{b9a57c09-4166-4c08-bd01-094eb41017c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMD">
+      <UniqueIdentifier>{862126f5-eb4e-4a12-8c86-4993ebb6f86a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMD\Impl">
+      <UniqueIdentifier>{d1a8c2e9-b149-4691-9f35-cdba398c625f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Impl">
+      <UniqueIdentifier>{96f4bc57-ea26-4d9a-ab9d-561921e4e691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{bc872a37-4cfe-4a2e-a3ee-f0c3ac6e0aec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Impl">
+      <UniqueIdentifier>{6e765d93-794f-463f-875a-e6aa8aa033cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{77d4679d-1957-4fa1-a019-c21676b0eabb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cmd\command.cpp">
+      <Filter>CMD\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmd\commandHandler.cpp">
+      <Filter>CMD\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmd\commandLexer.cpp">
+      <Filter>CMD\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmd\commandParser.cpp">
+      <Filter>CMD\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\shapeConstructor.cpp">
+      <Filter>GUI\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\slideCanvas.cpp">
+      <Filter>GUI\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\slideCollectionView.cpp">
+      <Filter>GUI\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\slideMainWindow.cpp">
+      <Filter>GUI\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\slideView.cpp">
+      <Filter>GUI\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\application\slideApplication.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\action.cpp">
+      <Filter>Core\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\shape.cpp">
+      <Filter>Core\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\shapeFactory.cpp">
+      <Filter>Core\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\slide.cpp">
+      <Filter>Core\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\slideCollection.cpp">
+      <Filter>Core\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\slideEditor.cpp">
+      <Filter>Core\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\commandPane.cpp">
+      <Filter>GUI\Impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\gui\shapeConstructor.h">
+      <Filter>GUI</Filter>
+    </QtMoc>
+    <QtMoc Include="src\gui\slideMainWindow.h">
+      <Filter>GUI</Filter>
+    </QtMoc>
+    <QtMoc Include="src\gui\slideView.h">
+      <Filter>GUI</Filter>
+    </QtMoc>
+    <QtMoc Include="src\core\slide.h">
+      <Filter>Core</Filter>
+    </QtMoc>
+    <QtMoc Include="src\core\slideCollection.h">
+      <Filter>Core</Filter>
+    </QtMoc>
+    <QtMoc Include="src\core\slideEditor.h">
+      <Filter>Core</Filter>
+    </QtMoc>
+    <QtMoc Include="src\gui\commandPane.h">
+      <Filter>GUI</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="PowerSlide.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CommandPane.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="PowerSlide.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cmd\command.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmd\commandHandler.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmd\commandHistory.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmd\commandLexer.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmd\commandParser.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\slideCanvas.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\slideCollectionView.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\application\slideApplication.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\action.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\shape.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\shapeFactory.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\core_action.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\core_shapeFactory.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\core_slideEditor.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\gui_slideMainWindow.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cmd_commandHandler.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\core_slideCollection.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\core_slide.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\core_shape.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PowerSlide.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
